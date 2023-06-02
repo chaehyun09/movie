@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>내배캠 인기 영화</title>
+  <link rel="icon" type="image/x-icon" href="assets/pop.ico">
+</head>
+
+<body>
+  <header>
+    <h1><a href="index.html">내배캠 인기 영화 콜렉션</a></h1>
+
+    
+    <!-- form 태그: 입력받은 내용을 서버에 전송해주는 태그이기 때문에 검색 기능 구현할 때
+    onclick 같은 거 안써도 돼!!! 이런거 쓰면 태그 기능도 모르는 놈....-->
+    <form onsubmit="search(event)">
+      <input type="text" id="search-input" placeholder="영화 제목을 검색해 보세요!" />
+      <button id="search-btn">검색</button>
+      <!--button의 디폴트: submit-->
+    </form>
+  </header>
+  <main>
+    <div class="movie-list" id="movieContainer"></div>
+  </main>
+  <script src="scr2.js"></script>
+</body>
+
+</html>

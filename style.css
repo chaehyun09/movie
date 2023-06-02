@@ -1,0 +1,87 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size:40px;
+    
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+h1 {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+input {
+    border: 1px solid #000000;
+    border-radius: 50px;
+    border-width: 3px;
+    width: 250px;
+    height: 50px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+
+#search-btn {
+    width: 80px;
+    height: 50px;
+    left: 636px;
+    top: 489px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    border-width: 3px;
+    transition: all 0.2s ease-in-out;
+
+    color:black;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#search-btn:hover {
+    background-color: black;
+    color:#FFFFFF;
+    cursor: pointer;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 24px;
+    margin-top: 30px;
+    }
+
+.movie-card {
+    cursor: pointer;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+img {
+    width:100%;
+    border-radius: 20px;
+    object-fit:cover;
+}
